@@ -1,4 +1,4 @@
-"""Deadline Quest - game menyelesaikan deadline (Python + Streamlit).
+"""deadline Quest - game menyelesaikan deadline (Python + Streamlit).
 
 Jalankan:
     pip install -r requirements.txt
