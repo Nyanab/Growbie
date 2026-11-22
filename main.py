@@ -1,4 +1,4 @@
-"""Deadline Quest - game menyelesaikan deadline (Python + Streamlit).
+"""Growbie - game menyelesaikan deadline (Python + Streamlit).
 
 Jalankan:
     pip install -r requirements.txt
@@ -20,7 +20,7 @@ DB = "data.json"
 MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
-st.set_page_config(page_title="Deadline Quest", page_icon="🎯", layout="centered")
+st.set_page_config(page_title="Growbie", page_icon="🎯", layout="centered")
 
 st.markdown("""
 <style>
@@ -252,7 +252,7 @@ def toggle(did, i):
 
 # ---------- halaman ----------
 def page_home():
-    st.title("Deadline Quest")
+    st.title("Growbie")
     st.caption("Selesaikan quest, kalahkan deadline.")
     hud()
     aktif = sorted((d for d in db["dl"] if progress(d) < 100), key=lambda d: d["due"])
